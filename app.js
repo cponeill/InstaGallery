@@ -13,9 +13,9 @@ app.use(express.static(__dirname + '/public'));
 var user = 'cponeill';
 var story_slug = 'Banksy';
 
-var api_key = '53895bce6477a64f55000a4b';
-var username = 'cponeill';
-var _token = '172c5d9e848ea850c530e6e989a1e9e5';
+var api_key = '//Your API Key';
+var username = '';
+var _token = '//Random Numbers';
 
 app.get('/',function(req, res){
   superagent.get("http://api.storify.com/v1/stories/" + user + "/" + story_slug)
